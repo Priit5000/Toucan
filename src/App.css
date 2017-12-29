@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html{
+
+  height: 100%;
+  
+
+} 
+
+.App {
+  
+  margin: auto;
+  margin-top: 2em;
+  border:0.3em solid   #0097a7;
+  border-radius: 5px;
+  padding: 1em;
+  width: 50%;
+  min-height: 16em;
+  max-width: 14em;
+  /*background: url('tuukan.jpg');    #af1e2d*/
+  background: #80deea;
+  background-position: right;
+  background-size: 5%;
+
+  color:#003333;
+  font-family: 'bebas neue','Open Sans',arial;
+  font-size: 2em;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+input{
+  margin:0.5em;
+  
+}
+
+h3 {
+  font-weight: 600;
+}
+
+img{
+  
+  max-width: 100%;
+  height: auto;
+
+  
+}
+img:active{
+  -webkit-filter:invert(100%);
+  filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+}
+li{
+  cursor: pointer;
+}
+/*ul li:before {
+    
+    content: '✦ ';
+    font-size: 1.2em;
+    font-weight: bold;
+}
+*/
+button {
+  color: #fff;
+  border: 5px solid #0D4D4D;
+  background: #0D4D4D;
+  border-radius: 5px;
+
+
+}
+button:hover{
+  background: #407F7F;
+  border: 5px solid #407F7F;
+}
+input {
+  border-radius: 5px;
+}
+#listWrap{
+  
+  padding:0.2em;
+  
+
+}
