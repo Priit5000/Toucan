@@ -6,7 +6,7 @@ class DisplayList extends React.Component{
 	
 	}
 	
-	removeItem(item, i){ //removeItem vb selleks et seda props jura return sisse ei peaks panema
+	removeItem(item, i){ 
 		this.props.removeTask(item, i);
 	}
 	//displayBird(){
@@ -14,7 +14,7 @@ class DisplayList extends React.Component{
 	//}
 
 	render(){
-		var listItems = this.props.names.map(function(task, i){ //map methodile peab this bindima sest refers to global scope muidu
+		var listItems = this.props.names.map(function(task, i){ 
 			return <div id="listWrap">
 			          <li onClick={() => {this.removeItem(task, i)}} key={i}> 
 
@@ -23,7 +23,7 @@ class DisplayList extends React.Component{
 
 			          </li>
 			        </div>;
-			//fat arrow - (x) => this.y on nagu function(x) { return this.y}.bind(this)
+			
 		}.bind(this));
 
 		//siia vb for cycle, nii paljuu kui listitemeid on, checkbox + listitem1 jne

@@ -17,7 +17,6 @@ html{
   width: 50%;
   min-height: 16em;
   max-width: 14em;
-  /*background: url('tuukan.jpg');    #af1e2d*/
   background: #80deea;
   background-position: right;
   background-size: 5%;
@@ -61,13 +60,7 @@ ul {
 li{
   cursor: pointer;
 }
-/*ul li:before {
-    
-    content: '✦ ';
-    font-size: 1.2em;
-    font-weight: bold;
-}
-*/
+
 button {
   color: #fff;
   border: 5px solid #0D4D4D;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import AddTask from './AddTask'
 import DisplayList from './DisplayList'
@@ -9,7 +9,7 @@ export default class TodoContainer extends React.Component {
 
     this.state = {
       tasks:[],
-      img: <img src={require('./tuukan.jpg')} />
+      img: <img src={require('./tuukan.jpg')} alt="" />
     }
 
     this.removeTask = this.removeTask.bind(this);
@@ -23,7 +23,7 @@ export default class TodoContainer extends React.Component {
   }
 
   showBird(){
-        if (this.state.tasks.length == 0) {
+        if (this.state.tasks.length === 0) {
             return(
               this.state.img
             )
@@ -34,13 +34,14 @@ export default class TodoContainer extends React.Component {
 
 
   removeTask(name, i){
-        let tasks = this.state.tasks.slice(); //slice method returns new array, OG stays
-        tasks.splice(i, 1);                   //let is block scope,, slice teeb copy k6igist ja splice muteerib siis copyt, muidu 
-                                              //muteeriks orikat th.st.ta
-        this.setState({                       //see toob siis splicitud array ilmselt
+        let tasks = this.state.tasks.slice(); 
+        tasks.splice(i, 1);                   
+                                              
+        this.setState({                       
             tasks
         });
   }
+  //ignore
    /* selectTasks(e){
       this.setState({tasks: this.state.tasks.concat([e.target.value])})
     };
@@ -66,6 +67,6 @@ export default class TodoContainer extends React.Component {
   
 }
 
-// this is how to remove an item; var removedItem = fruits.splice(pos, 1);
+
 
 
